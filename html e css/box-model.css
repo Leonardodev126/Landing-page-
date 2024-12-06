@@ -1,0 +1,22 @@
+
+/* Box-model - Display */
+
+.texto {
+	box-sizing: border-box; /* Ele adiciona valor a todos os elementos, como margin e padding, e não somente ao conteúdo dentro. Sempre usar */
+	display: block;
+	background-color: red;
+	/* Para controlar o conteúdo */
+	width: 100%;/* Ocupa o 50% do espaço ocupado na página */
+	height: 200px;
+	max-width: 600px;
+	max-height: 500px;
+	min-width: 0;
+	min-height: 0;
+	overflow: auto; /* Esconde o conteúdo que passar da  caixa, o que tiver fora */
+	margin: 0 auto 50px auto;
+	padding: 50px;
+	border: 5px solid black;
+}
+
+
+

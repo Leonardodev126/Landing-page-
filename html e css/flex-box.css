@@ -1,0 +1,34 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.flex-container {
+	display: flex; /* Ativando uma gama de opções para usar na minha caixa com o Display flex */
+	flex-direction: row; /* Flex-direction direciona para o eixo princiapal horizontal - row (esquersa para direita) column (cima para baixo) */
+	justify-content: space-between; /* Main axis - horizontal */ /* Justify-content é usado apartir do eixo principal (row) ou (column), ele é usado para mover os elementos nesse eixo */
+	flex-wrap: wrap; /* flex-wrap é usado quando não tem mais espaços e ele quebra a linha dos conteúdos dentro */
+	align-items: flex-start; /* Cross axis - vertical - ele é usado para o eixo secundário. ex: se o eixo principal for o vertical, então o align-items será o eixo secundaário horizontal */
+	align-content: center; /* Ele alinha todo o conteúdo especificado */
+	background-color: yellow;
+	height: 500px;
+}
+
+.flex-item {
+	color: white;
+	flex-grow: 1; /* Ele aumenta o tamanho do elemento dentro do display flex */
+	flex-basis: 320px; /* Define o tamanho inicial que o elemento dentro do flex terá */
+	flex-shrink: 0; /* Define o quanto o elemento vai encolher dentro do display flex */
+	flex: 1 0 320px;/* Shorthand do flex, ordem: grow shrink basis */
+	margin-bottom: 2%;
+	height: 200px;
+	background-color: red;
+	margin: 10px;
+}
+
+
+.flex-item:nth-child(2) {
+	order: 1; /* Controla a ordem dos elementos */
+}
+

@@ -1,0 +1,117 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth; /* Deixa a rolagem da tela mais suave */
+}
+
+body {
+	font-family: sans-serif;
+}
+.grid {
+	max-width: 1200px;
+	padding: 15px;
+	margin: 0 auto;
+	padding-top: 73px;
+}
+
+
+.grid::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+
+.grid .col {
+	width: 33.33%;
+	height: 300px;
+	/* Float libera o resto do espaço que o block está usando */
+	float: left;
+	padding: 15px;
+}
+
+
+.grid .col {
+	width: 33.33%;
+	height: 300px;
+	Float: left;
+	padding: 20px;
+
+}
+
+.grid .col-content {
+	width: 100%;
+	height: 100%;
+	/* Cores */
+	background-color: red;
+	/* border-radius: 50%; /* Border-radius - Deixa a borda mais redonda */
+	box-shadow: 0px 0px 20px 5px blue;
+}
+
+/* Barra de navegação */
+.menu {
+	width: 100%; /* 100% da tela */
+	position: fixed; /* Para ficar fixo na tela quando rolar para baixo*/
+	background-color: black;
+}
+
+.menu ul {
+	list-style: none;
+	display: block;
+	max-width: 1200px;
+	padding: 0 30px;
+	margin: 0 auto;
+}
+
+.menu ul li {
+	float: left;
+}
+
+.menu ul li a {
+	display: block;
+	color: #fff;
+	padding: 20px;
+	text-decoration: none;
+	transition: all 300ms ease-in-out;
+	
+}
+
+.menu ul li a:hover {
+	background-color: #333;
+	transition: 0.3s;
+}
+
+
+.full-page {
+	max-width: 100%;
+	padding-top: 73px;
+	height: 100vh;
+	background: #32A5;
+}
+
+.full-page-content {
+	max-width: 1200px;
+	padding: 0 30px;
+	margin: 0 auto;
+}
+
+
+/* Media Queries */
+/* Quando chegar no tamanho máximo de 320px na tela, execute o código abaixo */
+@media all and (max-width: 320px) {
+	.grid .col {
+		width: 100%;
+	}
+}
+
+@media all and (min-width: 321px) and (max-width: 768px) {
+	.grid .col {
+		width: 50%;
+	}
+}
+
+

@@ -1,0 +1,115 @@
+.heading {
+    transition: all 1s ease-in-out;
+}
+
+
+.heading:hover {
+    background-color: red;
+}
+
+
+
+a {
+    color: darkorange;
+}
+
+/* Pseudo-classes */
+
+a:link {
+    color: deeppink;
+}
+
+
+a:hover {
+    background-color: darkslateblue;
+    color: white;
+    text-decoration: none;
+    transition: all 700ms ease-in-out;
+
+}
+
+
+/* Quando segura no link com o mouse, ele munda a cor */
+a:active {
+    background-color: darkslategray;
+    color: white;
+}
+
+
+
+/* Configurando o input */
+input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: 1px solid black;
+}
+
+/* Quando o input tiver desabilitado para digitar */
+input:disabled {
+    background-color: rebeccapurple;
+    cursor: not-allowed;
+}
+
+
+/* Todo 'p' que não tiver a classe 'um', aplique isso */
+p:not(.um) {
+    color: blue;
+}
+
+
+/* Pseudo clase :nth-child() */
+/* O número dentro do parêntese é o indice do filho que eu quqero selecionar */
+ul li:nth-child(1) {
+    background-color: red;
+}
+
+ul li:nth-child(even) {
+    background-color: darkgoldenrod;
+}
+
+/* De 3 em 3 nos elementos filhos */
+ul li:nth-child(3n ) {
+    background-color: chartreuse;
+}
+
+
+
+/* Pseudo-elements*/
+
+
+ul li::after {
+	content: ' - ';
+	background: blue;
+	color: white;
+}
+
+p {
+	font-size: 24px;
+}
+
+/* pseudo elements mais utilizados */
+/* Primeira letra */
+p::first-letter {
+	font-size: 50px;
+	display: block;
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+
+/* Primeira linha */
+p::first-line {
+	background-color: red;
+}
+
+p::selection {
+	background-color: black;
+	color: white;
+}
+
+
+::placeholder {
+	color: #fa2;
+}
+
+

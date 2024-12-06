@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&family=Open+Sans:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/variables.css">
+    <link rel="stylesheet" href="../assets/css/class.css">
+    <link rel="stylesheet" href="../assets/css/elements.css">
+    <link rel="stylesheet" href="../assets/css/menu.css">
+    <link rel="stylesheet" href="../assets/css/index.css">
+</head>
+<body class="main-bg">
+
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close-menu"></label>
+
+    <aside class="menu white-bg">
+        <div class="main-content menu-content">
+            <h1 onclick="getElementById('close-menu').checked = false;">
+                <a href="#home">LOGO</a>
+            </h1>
+            <nav>
+                <!-- Usando Javascript na Ul -->
+                <ul onclick="getElementById('close-menu').checked = false;"> 
+                    <li><a href="#intro">intro</a></li>
+                    <li><a href="#grid-one">Grid one</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#grid-two">Grid two</a></li>
+                    <li><a href="#pricing">Princing</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside> 
+
+    <div class="menu-spacing"></div>   <!-- Div criada para fazer o espaçamento da minha section para baixo da minha barra de navegação   -->
+
+    <section id="home" class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>
+                    January brings us Firefox 85
+                </h2>
+                <p>Welcome to our website, where innovation meets simplicity. We are dedicated to providing high-quality solutions designed to enhance your digital experience. Our team focuses on delivering products and services tailored to meet the unique needs of each customer. Join us as we embark on a journey to make technology accessible, efficient, and enjoyable for everyone. Explore our offerings and see how we can help you achieve your goals.</p>
+            </div>
+            <div class="intro-img">
+                <img src="../assets/svg/javascript_atualizado.svg" alt="Logo de html, css e JS">
+            </div>
+        </div>
+    </section>
+
+    <section id="intro" class="white-bg section">
+        <div class="main-content top3-content">
+            <h2>TOP 3 jobs</h2>
+
+            
+            <p>A software developer is responsible for designing, coding, and maintaining software applications.</p>
+            <p>A graphic designer combines creativity and technical skills to create visually appealing designs for digital and print media. They use tools like Adobe Photoshop, Illustrator, or Figma to craft logos, advertisements, and branding materials. Graphic designers play a key role in shaping a company’s identity and ensuring consistent visual communication.</p>
+            <p>A teacher is an educator who inspires and guides students to achieve their academic and personal goals.</p>
+            </p>
+        </div>
+    </section>
+
+    <section id="grid-one" class="grid-one main-bg section">
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-heading">My grid</h2>
+            <p class="grid-description">Description</p>
+            
+            <div class="grid">
+                <article>
+                    <h3>Text one</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate blanditiis iure voluptates unde. A necessitatibus sequi totam? Quam earum atque enim ipsam, impedit architecto fuga numquam excepturi tempora nesciunt debitis.</p>
+                </article>
+
+                <article>
+                    <h3>Text two</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate blanditiis iure voluptates unde. A necessitatibus sequi totam? Quam earum atque enim ipsam, impedit architecto fuga numquam excepturi tempora nesciunt debitis.</p>
+                </article>
+
+                <article>
+                    <h3>Text three</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate blanditiis iure voluptates unde. A necessitatibus sequi totam? Quam earum atque enim ipsam, impedit architecto fuga numquam excepturi tempora nesciunt debitis.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="grid-one white-bg section">
+        <div class="main-content grid-one-content">
+            
+            <h2 class="grid-main-heading">Gallery</h2>
+            <p class="grid-description">Description</p>
+
+            <div class="grid">
+                <div class="gallery-img">
+                    <img src="../assets/img/pexels-lefsos-25947330.jpg" alt="">
+                </div>
+
+                <div class="gallery-img">
+                    <img src="../assets/img/pexels-silviopelegrin-29169112 (5).jpg" alt="">
+                </div>
+
+                <div class="gallery-img">
+                    <img src="../assets/img/pexels-hatice-796619215-27689581 (1).jpg" alt="">
+                </div>
+
+
+                <div class="gallery-img">
+                    <img src="../assets/img/pexels-tobiasbjorkli-2104151 (1).jpg" alt="">
+                </div>
+
+                <div class="gallery-img">
+                    <img src="../assets/img/pexels-lerone-pieters-98049581-12206307.jpg" alt="">
+                </div>
+
+                <div class="gallery-img">
+                    <img src="../assets/img/pexels-joshuaworoniecki-29273395.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="grid-two" class="grid-one main-bg section">
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-heading">My grid</h2>
+            <p class="grid-description">Description</p>
+            <div class="grid">
+                <article>
+                    <h3>Text one</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate blanditiis iure voluptates unde. A necessitatibus sequi totam? Quam earum atque enim ipsam, impedit architecto fuga numquam excepturi tempora nesciunt debitis.</p>
+                </article>
+
+                <article>
+                    <h3>Text two</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate blanditiis iure voluptates unde. A necessitatibus sequi totam? Quam earum atque enim ipsam, impedit architecto fuga numquam excepturi tempora nesciunt debitis.</p>
+                </article>
+
+                <article>
+                    <h3>Text three</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate blanditiis iure voluptates unde. A necessitatibus sequi totam? Quam earum atque enim ipsam, impedit architecto fuga numquam excepturi tempora nesciunt debitis.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="white-bg section">
+        <div class="main-content top3-content">
+            <h2>News Coverage and some surprises</h2>
+
+            
+            <!-- <p>A software developer is responsible for designing, coding, and maintaining software applications.</p>
+            <p>A graphic designer combines creativity and technical skills to create visually appealing designs for digital and print media. They use tools like Adobe Photoshop, Illustrator, or Figma to craft logos, advertisements, and branding materials. Graphic designers play a key role in shaping a company’s identity and ensuring consistent visual communication.</p>
+            <p>A teacher is an educator who inspires and guides students to achieve their academic and personal goals.</p>
+            </p> -->
+
+            <div class="responsive-table">
+                <table>
+                    <caption>Pricing table</caption>
+
+                    <thead>
+                        <tr>
+                            <th>Title 1</th>
+                            <th>Title 2</th>
+                            <th>Title 3</th>
+                            <th>Title 4</th>
+                            <th>Title 5</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                            <td>Content 3</td>
+                            <td>Content 3</td>
+                        </tr>
+
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                            <td>Content 3</td>
+                            <td>Content 3</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                            <td>Content 3</td>
+                            <td>Content 3</td>
+                        </tr>
+
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Testando</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>
+                    January brings us Firefox 85
+                </h2>
+                <p>Welcome to our website, where innovation meets simplicity. We are dedicated to providing high-quality solutions designed to enhance your digital experience. Our team focuses on delivering products and services tailored to meet the unique needs of each customer. Join us as we embark on a journey to make technology accessible, efficient, and enjoyable for everyone. Explore our offerings and see how we can help you achieve your goals.</p>
+            </div>
+            <div class="intro-img">
+                <img src="../assets/svg/undraw_javascript_frameworks_-8-qpc.svg" alt="Logo de html, css e JS">
+            </div>
+
+            <div class="contact-form">
+                <fieldset class="form-grid">
+                    <legend>Contact me</legend>
+
+                    <div class="form-group">
+                        <label for="first-name">First name:</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="last-name">Last name:</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Your last name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" placeholder="Your email">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" placeholder="your message"></textarea>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <button type="submit">Send message</button>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="white-bg">
+        <p>Meu primeiro Projeto  &euro;</p>
+    </footer>
+
+    <a class="back-to-top" href="#home">⏶︎</a>
+
+</body>
+</html>

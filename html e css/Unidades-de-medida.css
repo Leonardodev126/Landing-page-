@@ -1,0 +1,55 @@
+/* Unidades de medida 
+px, rem, em, vw, vh, % */
+
+html {
+	font-size: 62.5%;
+	/* Ele deixa o movimento da página mais suave */
+	scroll-behavior: smooth;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+/* px - pixel */
+.pai {
+	/* rem - Baseado no elemento root (HTML) documento  */
+	/*width: 30rem;*/
+	/* vw é 1% da largura do viewport - Ele ocupa todo o espaço  */
+	width: 50rem; /* 500px */
+	/* vh */
+	height: 100vh;
+	background-color: yellow;
+}
+
+.pai > div {
+	/* Porcentagem - 50% da Div pai*/
+	width: 50%;
+	height: 50rem;
+	background-color: blue;
+}
+
+
+/* em - faz com que o elemento se comporte baseando em outro elemento pai. no caso, na div chamada pai
+Ele usa multiplicacao. ex: 50px1em */
+p {
+	font-size: 1.6rem;
+	/*font-size: 1em;*/
+}
+
+
+.color-one {
+	background-color: orange;
+}
+
+.color-two {
+	background-color: turquoise;
+}
+
+.color-three {
+	background-color: black;
+}
+

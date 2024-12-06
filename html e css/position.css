@@ -1,0 +1,66 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Posicionamento - Position */
+
+.pai {
+	
+}
+
+.filha1, .filha2, .filha3 {
+	width: 300px;
+	height: 300px;
+	background-color: blue;
+	margin: 10px;
+	position: static;
+}
+
+
+.filha2 {
+	background-color: orange;
+	Position: fixed; /* Ele fica fixo na tela mesmo que eu role a página para baixo */
+	top: 30%;
+	right: 0;
+	z-index: 1;
+
+}
+
+/* positions */
+.filha1 {
+	/* position: relative; /* relative deixa as caixas flexíveis */
+	/* Posição absoluta em relação ao navegador 
+	top: 50%;
+	margin-top: -150px;
+	left: 50%;
+	margin-left: -150px;*/
+}
+
+.filha3 {
+	background-color: blue;
+	Position: relative;
+	top: 100px;
+	left: 100px
+}
+
+
+.outra {
+	Position: absolute;
+	font-size: 50px;
+	background-color: white;
+	right: 0;
+	bottom: 0;
+}
+
+ul {
+	height: 100px;
+	overflow-y: auto; /* Deixa o elemento com a opção de rolar para baxio */
+}
+
+/* O sticky rola até determinado momento em baixo até chegar no outro sticky e passar para o outro */
+ul li.sticky {
+	Position: sticky;
+	background-color: gray;
+	top: 0;
+}
